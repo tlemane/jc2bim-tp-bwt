@@ -7,15 +7,15 @@ rank_test = [0, 1, 0, 0, 1, 0, 1, 0, 1, 2, 3, 4, 2, 5, 3]
 occ_test = {'$': 1, 'A': 6, 'C': 4, 'G': 2, 'T': 2}
 
 
-with open("seq.pickle", "rb") as fin:
+with open("data/seq.pickle", "rb") as fin:
     seq = pickle.load(fin)
-with open("sa_seq.pickle", "rb") as fin:
+with open("data/sa_seq.pickle", "rb") as fin:
     sa_seq = pickle.load(fin)
-with open("bwt_seq.pickle", "rb") as fin:
+with open("data/bwt_seq.pickle", "rb") as fin:
     bwt_seq = pickle.load(fin)
-with open("rank_seq.pickle", "rb") as fin:
+with open("data/rank_seq.pickle", "rb") as fin:
     rank_seq = pickle.load(fin)
-with open("occ_seq.pickle", "rb") as fin:
+with open("data/occ_seq.pickle", "rb") as fin:
     occ_seq = pickle.load(fin)
 
 seq_queries = [
